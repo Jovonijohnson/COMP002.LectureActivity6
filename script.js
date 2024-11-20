@@ -12,4 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add event listener to the form to prevent default submit action
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission
-        
+               // Log the current value of the color input
+               const colorValue = colorInput.value; // Get the current value of the color input
+               console.log('Current color value:', colorValue); // Log the color value to the console
+               
+               // Save the color value to local storage
+               localStorage.setItem('colorInput', colorValue); // Save the color value to local storage
+           });
+       });
+       
